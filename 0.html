@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tools</title>
+	<!-- 导入 Material Design 风格的样式表 -->
+	<link rel="stylesheet" href="">
+    <style>
+		/* 定义自定义颜色 */
+		.custom-color{
+			background-color: #4383FF;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<form class="col s12">
+			  <div class="input-field col s6">
+			    <input id="website" type="text" class="validate">
+			    <label for="website">请输入网址(http://)</label>
+			  </div>
+			  <div class="input-field col s4">
+              	<style type='text/css'>
+                    #btn1{
+                        color: white;
+                        border:none;
+                    }
+              	</style>
+			  	<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="跳转" onclick="visitSite()">
+			  </div>
+			</form>
+			<form class="col s12">
+			  <div class="input-field col s6">
+			    <input id="baidu" type="text" class="validate">
+			    <label for="baidu">百度搜索</label>
+			  </div>
+			  <div class="input-field col s4">
+              	<style type='text/css'>
+                    #btn1{
+                        color: white;
+                        border:none;
+                    }
+              	</style>
+			  	<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="跳转" onclick="visitBaidu()">
+			  </div>
+			</form>
+			<form class="col s12">
+			  <div class="input-field col s6">
+			    <input id="zhihu" type="text" class="validate">
+			    <label for="zhihu">知乎搜索</label>
+			  </div>
+			  <div class="input-field col s4">
+              	<style type='text/css'>
+                    #btn1{
+                        color: white;
+                        border:none;
+                    }
+              	</style>
+			  	<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="跳转" onclick="visitZhihu()">
+			  </div>
+			</form>
+			<form class="col s12">
+			  <div class="input-field col s4">
+              	<style type='text/css'>
+                    #btn1{
+                        color: white;
+                        border:none;
+                    }
+              	</style>
+			  	<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="百度翻译" onclick="visitBaiduFanyi()">
+                <br>
+                <br>
+                <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="ChatGPT 镜像" onclick="visitChatGPT()">
+                <br>
+                <br>
+                <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="bilibili" onclick="visitbilibili()">
+                <br>
+                <br>
+                <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="网易云音乐" onclick="visitwyy()">
+                <br>
+                <br>
+                <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="music" onclick="visitmusic()">
+                <br>
+                <br>
+                <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="1" onclick="visit1()">
+                <br>
+                <br>
+                <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="2" onclick="visit2()">
+                <br>
+                <br>
+                <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="3" onclick="visit3()">
+                <br>
+                <br>
+                <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="4" onclick="visit4()">
+			  </div>
+			</form>
+		</div>
+	</div>
+
+	<!-- 导入 jQuery 和 Materialize 的脚本 -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<!-- 定义 JavaScript 函数 visitSite()，负责获取输入框中的网址并跳转 -->
+	<script>
+		function visitSite(){
+			var url = document.getElementById("website").value;
+			window.location.href = url;
+		}
+		function visitBaidu(){
+			var url = document.getElementById("baidu").value;
+			window.location.href = 'https://www.baidu.com/s?wd=' + url;
+		}
+		function visitZhihu(){
+			var url = document.getElementById("zhihu").value;
+			window.location.href = 'https://www.zhihu.com/search?type=content&q=' + url;
+		}
+		function visitBaiduFanyi(){
+			window.location.href = 'https://fanyi.baidu.com/';
+		}
+		function visitChatGPT(){
+			window.location.href = 'https://ai.usesless.com/scene/home';
+		}
+		function visitbilibili(){
+			window.location.href = 'https://www.bilibili.com/';
+		}
+		function visitwyy(){
+			window.location.href = 'https://music.163.com/';
+		}
+		function visitmusic(){
+			window.location.href = 'https://www.qyun.vip/music/';
+		}
+		function visit1(){
+			window.location.href = 'https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA5Mzk0MzQyNw==&action=getalbum&album_id=2146893492936048649&from_msgid=2456368142&from_itemidx=1&count=3&nolastread=1#wechat_redirect';
+		}
+		function visit2(){
+			window.location.href = 'https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg2MTc2NDY2NQ==&action=getalbum&album_id=2522545103618736132&from_msgid=2247489933&from_itemidx=1&count=3&nolastread=1#wechat_redirect';
+		}
+		function visit3(){
+			window.location.href = 'https://mp.weixin.qq.com/mp/homepage?__biz=MzU0MzU1MjA2NA==&hid=27&sn=3e0b9d702586d15188b69ebff94740ec&scene=18#wechat_redirect';
+		}
+		function visit4(){
+			window.location.href = 'https://mp.weixin.qq.com/mp/homepage?__biz=MzU0MzU1MjA2NA==&hid=28&sn=5aab49ea4c3b4883a7da556631cb470a&scene=18#wechat_redirect';
+		}
+	</script>
+</body>
+</html>
