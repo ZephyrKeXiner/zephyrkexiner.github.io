@@ -31,21 +31,6 @@
 			</form>
 			<form class="col s12">
 			  <div class="input-field col s6">
-			    <input id="baidu" type="text" class="validate">
-			    <label for="baidu">百度搜索</label>
-			  </div>
-			  <div class="input-field col s4">
-              	<style type='text/css'>
-                    #btn1{
-                        color: white;
-                        border:none;
-                    }
-              	</style>
-			  	<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="跳转" onclick="visitBaidu()">
-			  </div>
-			</form>
-			<form class="col s12">
-			  <div class="input-field col s6">
 			    <input id="zhihu" type="text" class="validate">
 			    <label for="zhihu">知乎搜索</label>
 			  </div>
@@ -93,7 +78,7 @@
 	<script>
 		function visitSite(){
 			var url = document.getElementById("website").value;
-			window.location.href = url;
+			window.location.href = 'http://' + url;
 		}
 		function visitBaidu(){
 			var url = document.getElementById("baidu").value;
