@@ -30,21 +30,6 @@
 			  </div>
 			</form>
 			<form class="col s12">
-			  <div class="input-field col s6">
-			    <input id="zhihu" type="text" class="validate">
-			    <label for="zhihu">知乎搜索</label>
-			  </div>
-			  <div class="input-field col s4">
-              	<style type='text/css'>
-                    #btn1{
-                        color: white;
-                        border:none;
-                    }
-              	</style>
-			  	<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="跳转" onclick="visitZhihu()">
-			  </div>
-			</form>
-			<form class="col s12">
 			  <div class="input-field col s4">
               	<style type='text/css'>
                     #btn1{
@@ -67,6 +52,9 @@
                 <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="music" onclick="visitmusic()">
                 <br>
                 <br>
+				<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="Wiki" onclick="visitWiki()">
+                <br>
+                <br>
                 <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="1" onclick="visit1()">
                 <br>
                 <br>
@@ -86,13 +74,8 @@
 			var url = document.getElementById("website").value;
 			window.location.href = 'http://' + url;
 		}
-		function visitBaidu(){
-			var url = document.getElementById("baidu").value;
-			window.location.href = 'https://www.baidu.com/s?wd=' + url;
-		}
 		function visitZhihu(){
-			var url = document.getElementById("zhihu").value;
-			window.location.href = 'https://www.zhihu.com/search?type=content&q=' + url;
+			window.location.href = 'https://www.zhihu.com';
 		}
 		function visitBaiduFanyi(){
 			window.location.href = 'https://fanyi.baidu.com/';
@@ -106,8 +89,8 @@
 		function visitwyy(){
 			window.location.href = 'https://music.163.com/';
 		}
-		function visitmusic(){
-			window.location.href = 'https://www.qyun.vip/music/';
+		function visitWiki(){
+			window.location.href = 'https://encyclopedia.thefreedictionary.com';
 		}
 		function visit1(){
 			window.location.href = 'https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA5Mzk0MzQyNw==&action=getalbum&album_id=2146893492936048649&from_msgid=2456368142&from_itemidx=1&count=3&nolastread=1#wechat_redirect';
