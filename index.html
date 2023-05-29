@@ -17,7 +17,7 @@
 			<form class="col s12">
 			  <div class="input-field col s6">
 			    <input id="website" type="text" class="validate">
-			    <label for="website">请输入网址(http:// or ftp://)</label>
+			    <label for="website">请输入网址(网址前加http:// or ftp://)</label>
 			  </div>
 			  <div class="input-field col s4">
               	<style type='text/css'>
@@ -38,11 +38,14 @@
                     }
               	</style>
 				<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="知乎" onclick="visitZhihu()">
+				<br>
+				<br>
+			  	<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="有道翻译" onclick="visitYoudaoFanyi()">
                 <br>
                 <br>
-			  	<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="百度翻译" onclick="visitBaiduFanyi()">
-                <br>
-                <br>
+				<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="谷歌搜索镜像" onclick="visitGoogle()">
+				<br>
+				<br>
                 <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="ChatGPT 镜像" onclick="visitChatGPT()">
                 <br>
                 <br>
@@ -52,11 +55,11 @@
                 <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="网易云音乐" onclick="visitwyy()">
                 <br>
                 <br>
-                <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="music" onclick="visitmusic()">
-                <br>
-                <br>
 				<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="Wiki" onclick="visitWiki()">
-                <!-- <br>
+                <br>
+                <br>
+				<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="中文Wiki镜像" onclick="visitZhWiki()">
+				<!-- <br>
                 <br>
                 <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="1" onclick="visit1()">
                 <br>
@@ -73,27 +76,33 @@
 
 	<!-- 定义 JavaScript 函数 visitSite()，负责获取输入框中的网址并跳转 -->
 	<script>
-		function visitSite(){
+		function visitSite() {
 			var url = document.getElementById("website").value;
 			window.location.href = url;
 		}
-		function visitZhihu(){
+		function visitZhihu() {
 			window.location.href = 'https://www.zhihu.com';
 		}
-		function visitBaiduFanyi(){
-			window.location.href = 'https://fanyi.baidu.com/';
+		function visitYoudaoFanyi() {
+			window.location.href = 'https://fanyi.youdao.com/index.html#/';
 		}
-		function visitChatGPT(){
+		function visitGoogle() {
+			window.location.href = 'https://search.ahau.cf/';
+		}
+		function visitChatGPT() {
 			window.location.href = 'https://ai.usesless.com/scene/home';
 		}
-		function visitbilibili(){
+		function visitbilibili() {
 			window.location.href = 'https://www.bilibili.com/';
 		}
-		function visitwyy(){
+		function visitwyy() {
 			window.location.href = 'https://music.163.com/';
 		}
-		function visitWiki(){
+		function visitWiki() {
 			window.location.href = 'https://encyclopedia.thefreedictionary.com';
+		}
+		function visitZhWiki() {
+			window.location.href = 'https://duhoc.cn/baike/zh/';
 		}
 		// function visit1(){
 		// 	window.location.href = 'https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA5Mzk0MzQyNw==&action=getalbum&album_id=2146893492936048649&from_msgid=2456368142&from_itemidx=1&count=3&nolastread=1#wechat_redirect';
