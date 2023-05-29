@@ -17,7 +17,7 @@
 			<form class="col s12">
 			  <div class="input-field col s6">
 			    <input id="website" type="text" class="validate">
-			    <label for="website">请输入网址(http://)</label>
+			    <label for="website">请输入网址(http:// or ftp://)</label>
 			  </div>
 			  <div class="input-field col s4">
               	<style type='text/css'>
@@ -75,7 +75,7 @@
 	<script>
 		function visitSite(){
 			var url = document.getElementById("website").value;
-			window.location.href = 'http://' + url;
+			window.location.href = url;
 		}
 		function visitZhihu(){
 			window.location.href = 'https://www.zhihu.com';
