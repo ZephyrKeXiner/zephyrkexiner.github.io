@@ -17,7 +17,7 @@
 			<form class="col s12">
 			  <div class="input-field col s6">
 			    <input id="website" type="text" class="validate">
-			    <label for="website">请输入网址(http://)</label>
+			    <label for="website">请输入网址(http:// or ftp://)</label>
 			  </div>
 			  <div class="input-field col s4">
               	<style type='text/css'>
@@ -53,12 +53,12 @@
                 <br>
                 <br>
 				<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="Wiki" onclick="visitWiki()">
-                <br>
+                <!-- <br>
                 <br>
                 <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="1" onclick="visit1()">
                 <br>
                 <br>
-                <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="2" onclick="visit2()">
+                <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="2" onclick="visit2()"> -->
 			  </div>
 			</form>
 		</div>
@@ -72,7 +72,7 @@
 	<script>
 		function visitSite(){
 			var url = document.getElementById("website").value;
-			window.location.href = 'http://' + url;
+			window.location.href = url;
 		}
 		function visitZhihu(){
 			window.location.href = 'https://www.zhihu.com';
@@ -92,12 +92,12 @@
 		function visitWiki(){
 			window.location.href = 'https://encyclopedia.thefreedictionary.com';
 		}
-		function visit1(){
-			window.location.href = 'https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA5Mzk0MzQyNw==&action=getalbum&album_id=2146893492936048649&from_msgid=2456368142&from_itemidx=1&count=3&nolastread=1#wechat_redirect';
-		}
-		function visit2(){
-			window.location.href = 'https://mp.weixin.qq.com/mp/homepage?__biz=MzU0MzU1MjA2NA==&hid=27&sn=3e0b9d702586d15188b69ebff94740ec&scene=18#wechat_redirect';
-		}
+		// function visit1(){
+		// 	window.location.href = 'https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA5Mzk0MzQyNw==&action=getalbum&album_id=2146893492936048649&from_msgid=2456368142&from_itemidx=1&count=3&nolastread=1#wechat_redirect';
+		// }
+		// function visit2(){
+		// 	window.location.href = 'https://mp.weixin.qq.com/mp/homepage?__biz=MzU0MzU1MjA2NA==&hid=27&sn=3e0b9d702586d15188b69ebff94740ec&scene=18#wechat_redirect';
+		// }
 	</script>
 </body>
 </html>
