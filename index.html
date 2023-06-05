@@ -17,7 +17,7 @@
 			<form class="col s12">
 			  <div class="input-field col s6">
 			    <input id="website" type="text" class="validate">
-			    <label for="website">请输入网址(网址前加http:// or ftp://)</label>
+			    <label for="website">请输入网址(http://)</label>
 			  </div>
 			  <div class="input-field col s4">
               	<style type='text/css'>
@@ -37,9 +37,9 @@
                         border:none;
                     }
               	</style>
-				<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="知乎" onclick="visitZhihu()">
+				<!-- <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="知乎" onclick="visitZhihu()">
 				<br>
-				<br>
+				<br> -->
 			  	<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="有道翻译" onclick="visitYoudaoFanyi()">
                 <br>
                 <br>
@@ -56,10 +56,10 @@
                 <br>
                 <br>
 				<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="Wiki" onclick="visitWiki()">
-                <br>
+                <!-- <br>
                 <br>
 				<input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="中文Wiki镜像" onclick="visitZhWiki()">
-				<!-- <br>
+				<br>
                 <br>
                 <input class="btn waves-effect waves-light custom-color" type="button" id='btn1' value="1" onclick="visit1()">
                 <br>
@@ -80,9 +80,9 @@
 			var url = document.getElementById("website").value;
 			window.location.href = url;
 		}
-		function visitZhihu() {
-			window.location.href = 'https://www.zhihu.com';
-		}
+		// function visitZhihu() {
+		// 	window.location.href = 'https://www.zhihu.com';
+		// }
 		function visitYoudaoFanyi() {
 			window.location.href = 'https://fanyi.youdao.com/index.html#/';
 		}
@@ -101,9 +101,9 @@
 		function visitWiki() {
 			window.location.href = 'https://encyclopedia.thefreedictionary.com';
 		}
-		function visitZhWiki() {
-			window.location.href = 'https://duhoc.cn/baike/zh/';
-		}
+		// function visitZhWiki() {
+		// 	window.location.href = 'https://duhoc.cn/baike/zh/';
+		// }
 		// function visit1(){
 		// 	window.location.href = 'https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA5Mzk0MzQyNw==&action=getalbum&album_id=2146893492936048649&from_msgid=2456368142&from_itemidx=1&count=3&nolastread=1#wechat_redirect';
 		// }
